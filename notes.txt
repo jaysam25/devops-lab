@@ -1,1 +1,5 @@
 john is learning linuz
+Day 2 of learning Devops 
+learnig Git branches 
+Learning Git branches
+learning pull request
