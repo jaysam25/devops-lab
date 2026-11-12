@@ -1,0 +1,25 @@
+
+    name: Multi-step CI Pipeline 
+
+   on:
+       push:
+
+
+
+        jobs: 
+          build:
+            runs-on:   ubuntu-latest
+
+            steps:
+             - name: Checkout Repository
+             - uses: actions/checkout@4
+
+             - name: show current Directory 
+               run:   pwd
+
+            -  name: List files
+               run: ls -la
+
+
+               - name: Display Success Message 
+               run:  echo "CI Pipeline Successful" 
