@@ -1,12 +1,12 @@
-name : Artifacts Demo
+name : Artifact Demo
+
 
    on:
      push:
 
 
-      job:
+      jobs:
         build:
-
 
          run-on: ubuntu-latest
 
@@ -17,7 +17,7 @@ name : Artifacts Demo
              run: echo "Hello from Github Actions" > message.txt
 
           - name: Upload Artifact
-            uses: actions/upload-artifacts@v4
+            uses: actions/upload-artifact@v4
 
          with:
             name: my-artifacts
