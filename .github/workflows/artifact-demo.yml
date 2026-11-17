@@ -1,0 +1,24 @@
+name : Artifacts Demo
+
+   on:
+     push:
+
+
+      job:
+        build:
+
+
+         run-on: ubuntu-latest
+
+      
+
+          steps:
+           - name: Create File
+             run: echo "Hello from Github Actions" > message.txt
+
+          - name: Upload Artifact
+            uses: actions/upload-artifacts@v4
+
+         with:
+            name: my-artifacts
+            path: message.txt
