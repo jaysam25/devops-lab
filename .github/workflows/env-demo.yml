@@ -1,0 +1,22 @@
+name: Environment Variables Demo
+
+on:
+  push:
+
+env:
+  APP_NAME: DevOps-Lab
+  ENVIRONMENT: Development
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show App Name
+        run: echo "Application is $APP_NAME"
+
+      - name: Show Environment
+        run: echo "Environment is $ENVIRONMENT"
+
+      - name: Combined Message
+        run: echo "$APP_NAME is running in $ENVIRONMENT"
